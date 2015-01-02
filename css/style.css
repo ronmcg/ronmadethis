@@ -1,0 +1,98 @@
+/*Roboto Slab Font*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body {
+  height: 100%;
+  background-color: black;
+}
+
+#terminal {
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  /*If video cannot be shown the bg is black*/
+}
+
+.main {
+  margin-top: 10%;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  height: 100vh;
+}
+
+/* Smartphones (portrait and landscape)
+   Make the main div the size of the content instead of view height
+*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+{
+  .main {
+    height: auto;
+    margin-bottom: 10%;
+  }
+}
+
+/*Icons*/
+i {
+  color: #ecf0f1;
+}
+
+.icon-bg{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+#icon-projects{
+  background-color: #2ecc71;
+}
+#icon-fun{
+  background-color: #3498db;
+}
+#icon-contact{
+  background-color: #9b59b6;
+}
+/*Center things in the circles*/
+.info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chevron {
+  color: #ecf0f1;
+}
+
+#section1 {
+  width: 100vw;
+  height : 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #16a085;
+}
+
+
+#section2 {
+  width: 100%;
+  height : 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #27ae60;
+}
+#section3 {
+  width: 100%;
+  height : 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #2ecc71;
+}
