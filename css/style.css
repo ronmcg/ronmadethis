@@ -1,9 +1,14 @@
 /*Roboto Slab Font*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400);
 
 body {
   height: 100%;
   background-color: black;
+  font-family: 'Roboto Slab', serif;
+}
+
+hr {
+  color: #bdc3c7;
 }
 
 #terminal {
@@ -22,12 +27,12 @@ body {
 .main {
   margin-top: 10%;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+
   height: 100vh;
 }
 
 /* Smartphones (portrait and landscape)
-   Make the main div the size of the content instead of view height
+Make the main div the size of the content instead of view height
 */
 @media only screen
 and (min-device-width : 320px)
@@ -41,7 +46,7 @@ and (max-device-width : 480px)
 
 /*Icons*/
 i {
-  color: #ecf0f1;
+  color: #ECF0F1;
 }
 
 .icon-bg{
@@ -54,18 +59,20 @@ i {
 }
 
 #icon-projects{
-  background-color: #2ecc71;
+  background-color: #00E676;
 }
 #icon-fun{
-  background-color: #3498db;
+  background-color: #19B5FE;
 }
 #icon-contact{
-  background-color: #9b59b6;
+  background-color: #BF55EC;
 }
 /*Center things in the circles*/
 .info {
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -75,10 +82,10 @@ i {
 
 #section1 {
   width: 100vw;
-  height : 100vh;
-  padding: 0;
+  min-height : 100vh;
+  padding: 5% 0 5% 0;
   margin: 0;
-  background-color: #16a085;
+  background-color: #00E676;
 }
 
 
@@ -87,12 +94,29 @@ i {
   height : 100vh;
   padding: 0;
   margin: 0;
-  background-color: #27ae60;
+  background-color: #19B5FE;
 }
 #section3 {
   width: 100%;
   height : 100vh;
   padding: 0;
   margin: 0;
-  background-color: #2ecc71;
+  background-color: #8e44ad;
+}
+
+.icon-contact {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.social-icon {
+  transition: color 1s ease;
+}
+
+.social-icon:hover {
+  color: #2ecc71;
 }
