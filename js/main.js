@@ -1,19 +1,35 @@
 //Handle clicks on the circles
-$('#b1').click(function(e) {
+$('#b-contact').click(function(e) {
   e.preventDefault();
   $('html, body').animate({
-    scrollTop: $('#section1').offset().top
+    scrollTop: $('#section-contact').offset().top
   }, 1000);
 });
-$('#b2').click(function(e) {
+$('#b-about').click(function(e) {
   e.preventDefault();
   $('html, body').animate({
-    scrollTop: $('#section2').offset().top
+    scrollTop: $('#section-about').offset().top
   }, 1000);
 });
-$('#b3').click(function(e) {
+$('#b-projects').click(function(e) {
   e.preventDefault();
   $('html, body').animate({
-    scrollTop: $('#section3').offset().top
+    scrollTop: $('#section-projects').offset().top
   }, 1000);
+});
+$('#b-fun-stuff').click(function(e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $('#section-fun-stuff').offset().top
+  }, 1000);
+});
+//get the location of the top of the contat section
+var contactTop = $('#section-contact').offset().top;
+console.log(contactTop);
+$(document).scroll(function(){
+  if($(this).scrollTop() > contactTop){
+    $('#contact-floater').fadeOut('fast');
+  } else {
+    $('#contact-floater').fadeIn('fast');
+  }
 });

@@ -1,14 +1,56 @@
 /*Roboto Slab Font*/
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,300);
 
 body {
   height: 100%;
   background-color: black;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Raleway' sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  position: relative;
+}
+
+.link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 4px;
+  background-color: black;
+  content: "";
+  transition: width 0.2s;
+}
+
+.link:hover:after {
+  width: 100%;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 hr {
-  color: #bdc3c7;
+  border-color: #2c3e50;
+}
+
+img {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+/*Icons*/
+i {
+  color: #ECF0F1;
 }
 
 #terminal {
@@ -32,8 +74,20 @@ hr {
   min-height: 100vh;
 }
 
-.circles{
+#contact-floater{
+  color: black;
+  background-color: #ecf0f1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5%;
+}
 
+#paper-plane{
+  color: black;
 }
 /* Smartphones (portrait and landscape)
 Make the main div the size of the content instead of view height
@@ -46,11 +100,6 @@ and (max-width : 480px)
     padding-top: 5%;
     height: auto;
   }
-}
-
-/*Icons*/
-i {
-  color: #ECF0F1;
 }
 
 .icon-bg{
@@ -68,8 +117,8 @@ i {
 #icon-fun{
   background-color: #19B5FE;
 }
-#icon-contact{
-  background-color: #BF55EC;
+#icon-about{
+  background-color: #f39c12;
 }
 /*Center things in the circles*/
 .info {
@@ -84,7 +133,19 @@ i {
   color: #ecf0f1;
 }
 
-#section1 {
+.lead{
+  font-weight: 300;
+}
+
+#section-about {
+  width: 100%;
+  min-height : 100vh;
+  padding: 5% 0 5% 0;
+  margin: 0;
+  background-color: #f39c12;
+}
+
+#section-projects {
   width: 100%;
   min-height : 100vh;
   padding: 5% 0 5% 0;
@@ -103,14 +164,14 @@ i {
   color: black;
 }
 
-#section2 {
+#section-fun-stuff {
   width: 100%;
-  height : 100vh;
+  min-height : 100vh;
   padding: 5% 0 5% 0;
   margin: 0;
   background-color: #19B5FE;
 }
-#section3 {
+#section-contact {
   width: 100%;
   height : 100vh;
   padding: 0;

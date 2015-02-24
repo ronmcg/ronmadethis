@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ronnie McGregor's portfolio">
+  <meta name="description" content="Portfolio for software developer Ronnie McGregor">
   <meta name="author" content="Ronnie McGregor">
   <link rel="icon" href="favicon.ico">
 
   <title>Ronnie McGregor | Portfolio</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -23,17 +22,35 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-
 <body>
-
   <video id="terminal" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
     <source src="img/terminal2.mp4" type="video/mp4">
       <source src="img/terminal2.webm" type="video/webm">
       </video>
 
+      <div id="contact-floater">
+        <a id="b-contact" href="#section-contact" role="button">
+          <i class="fa fa-paper-plane-o fa-1x" id="paper-plane"> Contact</i>
+        </a>
+      </div>
+
       <div class="container">
         <div class="row main">
           <section class="circles">
+                <div class="col-md-4 col-lg-4">
+                  <div class="icon-bg" id="icon-about">
+                    <section class="info">
+                      <i class="fa fa-user fa-5x"></i>
+                      <h2>About</h2>
+                      <p>Me</p>
+                      <p>
+                        <a id="b-about" href="#section-about" role="button">
+                          <i class="fa fa-chevron-down fa-3x chevron"></i>
+                        </a>
+                      </p>
+                    </section>
+                  </div>
+                </div>
             <div class="col-md-4 col-lg-4">
               <div class="icon-bg" id="icon-projects">
                 <section class="info">
@@ -41,7 +58,7 @@
                   <h2>Projects</h2>
                   <p>See some of the things I've done.</p>
                   <p>
-                    <a id="b1" href="#section1" role="button">
+                    <a id="b-projects" href="#section-projects" role="button">
                       <i class="fa fa-chevron-down fa-3x chevron"></i>
                     </a>
                   </p>
@@ -55,50 +72,56 @@
                       <h2>Fun Stuff</h2>
                       <p>Photography and whatnot</p>
                       <p>
-                        <a id="b2" href="#section2" role="button">
+                        <a id="b-fun-stuff" href="#section-fun-stuff" role="button">
                           <i class="fa fa-chevron-down fa-3x chevron"></i>
                         </a>
                       </p>
                     </section>
                   </div>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-md-4 col-lg-4">
-                  <div class="icon-bg" id="icon-contact">
-                    <section class="info">
-                      <i class="fa fa-send-o fa-5x"></i>
-                      <h2>Contact</h2>
-                      <p>Get a hold of me</p>
-                      <p>
-                        <a id="b3" href="#section3" role="button">
-                          <i class="fa fa-chevron-down fa-3x chevron"></i>
-                        </a>
-                      </p>
-                    </section>
-                  </div>
-                </div>
               </section>
             </div><!-- /.row -->
           </div>
 
-          <section id="section1">
+          <section id="section-about">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                <h1>Ronnie McGregor</h1>
+                <h3>24 year old dev from Calgary</h3>
+                <p class="lead">
+                  In 2015 I will graduate from Mount Royal University in Calgary with a degree in Computer Information Systems. I love to write code and make things. 
+                </p>
+                <h3>Interests</h3>
+                <p class="lead">
+                In my free time I like to take photos, read science fiction, go for a bike ride or a hike. That and a ton of Netflix.
+                </p>
+                </div>
+                <div class="col-md-5">
+                <img class="img-responsive img-circle" src="img/me.jpg" alt="Me!">
+                </div>
+              </div>
+          </div>
+          </section>
+          <section id="section-projects">
             <div class="container">
               <div class="row">
                 <div class="col-md-7">
                   <h2>
-                  <a href="http://ronmadethis.com/IM/">Inspection Mapper.</a> 
-                  <span class="text-muted">PHP, MySQL, JavaScript</span>
+                    <a class="link" href="http://ronmadethis.com/IM/">Inspection Mapper.</a> 
+                    <span class="text-muted">PHP, MySQL, JavaScript.</span>
                   </h2>
-                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
-                      <i class="fa fa-github-alt fa-2x project-icon"></i>
-                  </a>
                   <p class="lead">
-                    This project crawls the <a href="http://www12.albertahealthservices.ca/health-inspections/SearchServlet?direct=alphaSearch&letter=R&name=&address=&municipality=&community=" target="_blank">Alberta Health site</a>,
+                    This project crawls the <a class="link" href="http://www12.albertahealthservices.ca/health-inspections/SearchServlet?direct=alphaSearch&letter=R&name=&address=&municipality=&community=" target="_blank">Alberta Health site</a>,
                     then scrapes and parses the health violations of Calgary businesses.
                     The data is displayed on a map which users can interact with or search.
-                    The <a href="https://developers.google.com/maps/documentation/geocoding/" target="_blank">Google Geocoding API</a> is used to turn addresses into latitude and longitude coordinates. This project was created
-                    by a classmate and myself for the <a href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">advanced web development</a>
+                    The <a class="link" href="https://developers.google.com/maps/documentation/geocoding/" target="_blank">Google Geocoding API</a> is used to turn addresses into latitude and longitude coordinates. This project was created
+                    by a classmate and myself for the <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">advanced web development</a>
                     course at Mount Royal University.
                   </p>
+                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
+                    <i class="fa fa-github fa-3x project-icon"></i>
+                  </a>
                 </div>
                 <div class="col-md-5">
                   <!-- Carousel
@@ -126,80 +149,93 @@
               <hr/>
               <div class="row">
                 <div class="col-md-5">
-                  <img class="img-responsive" src="img/mru.png" alt="Overview of MRU Changes">
+                  <img class="img-responsive img-rounded" src="img/mru.png" alt="Overview of MRU Changes">
                 </div>
                 <div class="col-md-7">
                   <h2>
-                    <a href="http://ronmadethis.com/MRUChanges" target="_blank">MRU Changes. </a>
-                    <span class="text-muted">PHP, MySQL, JavaScript</span>
+                    <a class="link" href="http://ronmadethis.com/MRUChanges" target="_blank">MRU Changes. </a>
+                    <span class="text-muted">PHP, MySQL, JavaScript.</span>
                   </h2>
-                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
-                      <i class="fa fa-github-alt fa-2x project-icon"></i>
-                  </a>
                   <p class="lead">
-                    This project is also from <a href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">advanced web development</a>.
-                    We were each given some documents outlining the university's workflow for implementing changes. The project relied heavily
-                    on requirments gathering since there was not enough information provided to complete the project initially.
+                    This project is also from <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">advanced web development</a>.
+                    We were each given some documents outlining the university's workflow for implementing changes and two weeks. The goal of this assignment was to move quickly to make a working prototype, the idea was
+                    to show the university that this project could be done by students.
                   </p>
+                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
+                    <i class="fa fa-github fa-3x project-icon"></i>
+                  </a>
                 </div>
               </div>
               <hr/>
               <div class="row">
                 <div class="col-md-7">
-                  <h2>Art Store. <span class="text-muted">ASP.NET, C#, MSACCESS</span></h2>
-                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
-                      <i class="fa fa-github-alt fa-2x project-icon"></i>
-                  </a>
+                  <h2>Art Store. <span class="text-muted">ASP.NET, C#, MSACCESS.</span></h2>
                   <p class="lead">
                     This project is from Web II, ugly as sin but very functional.
                   </p>
+                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
+                    <i class="fa fa-github fa-3x project-icon"></i>
+                  </a>
                 </div>
                 <div class="col-md-5">
-                  <img class="img-responsive" src="img/mru.png" alt="Overview of Art Store">
+                  <img class="img-responsive img-rounded" src="img/mru.png" alt="Overview of Art Store">
                 </div>
               </div>
               <hr/>
               <div class="row">
                 <div class="col-md-5">
-                  <img class="img-responsive" src="img/lake.jpg" alt="Overview of Community Soundboard">
+                  <img class="img-responsive img-rounded" src="img/community.png" alt="Overview of Community Soundboard">
                 </div>
                 <div class="col-md-7">
-                  <h2>Community Soundboard. <span class="text-muted">Java, Android</span></h2>
+                  <h2>
+                  <a class="link" href="https://play.google.com/store/apps/details?id=com.ronnie.community" target="_blank">Community Soundboard.</a> <span class="text-muted">Java, Android</span></h2>
                   <p class="lead">
-                    Personal project just for fun
+                    This is a personal project just for fun. Over 30,000 installs and a rating of 4.57/5.
                   </p>
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="section2">
-            <div class="container">
+          <section id="section-fun-stuff">
+          <div class="container">
               <div class="row">
                 <div class="col-md-7">
-                  <h2>FacePong. <span class="text-muted">Unreal Engine, Oculus Rift</span></h2>
+                  <h2>Photography.</h2>
                   <p class="lead">
-                    Maybe the dumbest thing I've ever done.
+                    I like to take photos when I can and the few that turn out decent I post to my flickr account.
                   </p>
                 </div>
                 <div class="col-md-5">
-                  <img class="img-responsive" src="img/mru.png" alt="Overview of Art Store">
+                  <img class="img-responsive img-rounded" src="img/orchid.jpg" alt="Overview of Art Store">
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+              <div class="col-md-5">
+                  <img class="img-responsive img-rounded" src="img/oculus.jpg" alt="Overview of Art Store">
+                </div>
+                <div class="col-md-7">
+                  <h2>FacePong. <span class="text-muted">Unreal Engine, Oculus Rift.</span></h2>
+                  <p class="lead">
+                    3D pong and you're face is the paddle!
+                  </p>
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="section3">
+          <section id="section-contact">
             <div class="row icon-contact">
               <div class="col-sm-3 col-md-3 col-lg-3">
                 <a href="https://github.com/ronmcg">
-                <i class="fa fa-github fa-5x social-icon" id="facebook"></i>
-              </a>
+                  <i class="fa fa-github fa-5x social-icon" id="facebook"></i>
+                </a>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3">
                 <a href="https://ca.linkedin.com/in/ronniemcgregor">
-                <i class="fa fa-linkedin-square fa-5x social-icon" id="linkedin"></i>
-              </a>
+                  <i class="fa fa-linkedin-square fa-5x social-icon" id="linkedin"></i>
+                </a>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3">
                 <a href="https://twitter.com/ronmadethis">
@@ -213,7 +249,6 @@
               </div>
             </div>
           </section>
-          <!-- Placed at the end of the document so the pages load faster -->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
           <script src="js/main.js"></script>
