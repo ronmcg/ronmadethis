@@ -9,6 +9,11 @@ body {
   font-weight: 500;
 }
 
+.lead {
+  line-height: 175%;
+}
+
+/**Make the links pretty*/
 a {
   text-decoration: none;
   color: inherit;
@@ -47,10 +52,13 @@ img {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
-
 /*Icons*/
 i {
   color: #ECF0F1;
+}
+
+.i-resume {
+  color: #333;
 }
 
 #terminal {
