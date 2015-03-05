@@ -4,9 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="description" content="Portfolio for software developer Ronnie McGregor">
   <meta name="author" content="Ronnie McGregor">
+  <meta property="og:title" content="Ronnie McGregor | Portfolio" />
+  <meta property="og:description" content="Portfolio for software developer Ronnie McGregor" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://ronmadethis.com" />
+  <meta property="og:image" content="http://ronmadethis.com/img/me.jpg" />
+  <meta name="theme-color" content="#e74c3c">
   <link rel="icon" href="favicon.ico">
 
   <title>Ronnie McGregor | Portfolio</title>
@@ -23,6 +29,7 @@
   <![endif]-->
 </head>
 <body>
+  <!-- Auto play videos don't work on chrome mobile :( -->
   <video id="terminal" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
     <source src="img/terminal2.mp4" type="video/mp4">
       <source src="img/terminal2.webm" type="video/webm">
@@ -30,170 +37,169 @@
 
       <div id="contact-floater">
         <a id="b-contact" href="#section-contact" role="button">
-          <i class="fa fa-paper-plane-o fa-1x" id="paper-plane"> Contact</i>
+          <i class="fa fa-paper-plane-o fa-1x i-black" id="paper-plane"> Contact</i>
         </a>
       </div>
 
       <div class="container">
-        <div class="row main">
-          <section class="circles">
-                <div class="col-md-4 col-lg-4">
-                  <div class="icon-bg" id="icon-about">
-                    <section class="info">
-                      <i class="fa fa-user fa-5x"></i>
-                      <h2>About</h2>
-                      <p>Me</p>
-                      <p>
-                        <a id="b-about" href="#section-about" role="button">
-                          <i class="fa fa-chevron-down fa-3x chevron"></i>
-                        </a>
-                      </p>
-                    </section>
-                  </div>
-                </div>
-            <div class="col-md-4 col-lg-4">
-              <div class="icon-bg" id="icon-projects">
-                <section class="info">
-                  <i class="fa fa-file-code-o fa-5x"></i>
-                  <h2>Projects</h2>
-                  <p>See some of the things I've done.</p>
-                  <p>
-                    <a id="b-projects" href="#section-projects" role="button">
-                      <i class="fa fa-chevron-down fa-3x chevron"></i>
-                    </a>
-                  </p>
-                  <section>
-                  </div>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-md-4 col-lg-4">
-                  <div class="icon-bg" id="icon-fun">
-                    <section class="info">
-                      <i class="fa fa-camera-retro fa-5x"></i>
-                      <h2>Fun Stuff</h2>
-                      <p>Photography and whatnot</p>
-                      <p>
-                        <a id="b-fun-stuff" href="#section-fun-stuff" role="button">
-                          <i class="fa fa-chevron-down fa-3x chevron"></i>
-                        </a>
-                      </p>
-                    </section>
-                  </div>
-                </div><!-- /.col-lg-4 -->
-              </section>
-            </div><!-- /.row -->
-          </div>
-
-          <section id="section-about">
-          <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                <h2>Ronnie McGregor. <small>24 year old guy from Calgary</small></h2>
-                <p class="lead">
-                  In 2015 I will graduate from Mount Royal University in Calgary with a degree in <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/index.htm" target="_blank">Computer Information Systems</a>. I love to write code and make things. 
+        <div class="row main circles">
+          <div class="col-md-4 col-lg-4">
+            <div class="icon-bg" id="icon-about">
+              <div class="info">
+                <i class="fa fa-user fa-5x"></i>
+                <h2>About</h2>
+                <p>Me</p>
+                <p>
+                  <a id="b-about" href="#section-about" role="button">
+                    <i class="fa fa-chevron-down fa-3x chevron"></i>
+                  </a>
                 </p>
-                <h3>Interests</h3>
-                <p class="lead">
-                In my free time I like to take photos, read science fiction, go for a bike ride or a hike. That and a ton of Netflix.
-                </p>
-                <h3>Résumé</h3>
-                  <a href="http://ronmadethis.com/dl/Ronnie.McGregor.Resume.pdf" target="_blank" title="View my resume">
-                    <i class="fa fa-file-pdf-o fa-2x i-resume"></i>
-                  </a>
-                </div>
-                <div class="col-md-5">
-                <img class="img-responsive img-circle" src="img/me.jpg" alt="Me!">
-                </div>
-              </div>
-          </div>
-          </section>
-          <section id="section-projects">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <h2>
-                    <a class="link" href="http://im.ronmadethis.com/" target="_blank">Inspection Mapper.</a> 
-                    <small>PHP, MySQL, JavaScript.</small>
-                  </h2>
-                  <p class="lead">
-                    This project crawls the <a class="link" href="http://www12.albertahealthservices.ca/health-inspections/SearchServlet?direct=alphaSearch&letter=R&name=&address=&municipality=&community=" target="_blank">Alberta Health site</a>,
-                    then scrapes and parses the health violations of Calgary businesses.
-                    The data is displayed on a map which users can interact with or search.
-                    The <a class="link" href="https://developers.google.com/maps/documentation/geocoding/" target="_blank">Google Geocoding API</a> is used to turn addresses into latitude and longitude coordinates. This project was created
-                    by a classmate and myself for the <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">Advanced Web Development</a>
-                    course at Mount Royal University.
-                  </p>
-                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
-                    <i class="fa fa-github fa-3x project-icon"></i>
-                  </a>
-                </div>
-                <div class="col-md-5">
-                 <img class="img-responsive img-rounded" src="img/im3.png" alt="Overview of Inspection Mapper">
-                </div>
-              </div>
-              <hr/>
-              <div class="row">
-                <div class="col-md-7">
-                  <h2>
-                    <a class="link" href="http://mru.ronmadethis.com/" target="_blank">MRU Changes. </a>
-                    <small>PHP, MySQL, JavaScript.</small>
-                  </h2>
-                  <p class="lead">
-                    This project is also from <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">Advanced Web Development</a>.
-                    We were each given some documents outlining the university's workflow for implementing changes and two weeks. The goal of this assignment was to move quickly to make a working prototype, the idea was
-                    to show the university that this project could be done by students.
-                  </p>
-                  <a href="https://github.com/ronmcg" target="_blank" title="View the source">
-                    <i class="fa fa-github fa-3x project-icon"></i>
-                  </a>
-                </div>
-                <div class="col-md-5">
-                  <img class="img-responsive img-rounded" src="img/mru.png" alt="Overview of MRU Changes">
-                </div>
-              </div>
-              <hr/>
-              <div class="row">
-                <div class="col-md-7">
-                  <h2>
-                  <a class="link" href="http://ronmadethis.azurewebsites.net" target="_blank">Art Store. </a><small>ASP.NET, C#, MSACCESS.</small></h2>
-                  <p class="lead">
-                    This project is from the <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp3512.htm" target="_blank">Web Application Development</a> course taught by <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/ComputerScienceInformationSystems/Faculty/rconnolly.htm" target="_blank">Randy Connolly</a> at Mount Royal University completed by two other
-                    classmates and myself. This project utilizes a three tier design (presentation, business, and data layers). Our project was used as the example for future classes.
-                  </p>
-                  <a href="https://github.com/ronmcg/Art-Store" target="_blank" title="View the source">
-                    <i class="fa fa-github fa-3x project-icon"></i>
-                  </a>
-                </div>
-                <div class="col-md-5">
-                  <img class="img-responsive img-rounded" src="img/art-store.png" alt="Overview of Art Store">
-                </div>
-              </div>
-              <hr/>
-              <div class="row">
-                <div class="col-md-7">
-                  <h2>
-                  <a class="link" href="https://play.google.com/store/apps/details?id=com.ronnie.community" target="_blank">Community Soundboard.</a> <small>Java, Android</small></h2>
-                  <p class="lead">
-                    This is a personal project that is just for fun. Users can play clips from the TV show or set them as their ringtone. Over 30,000 installs and a rating of 4.57/5.
-                  </p>
-                </div>
-                <div class="col-md-5">
-                  <img class="img-responsive img-rounded" src="img/community.png" alt="Overview of Community Soundboard">
-                </div>
               </div>
             </div>
-          </section>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="icon-bg" id="icon-projects">
+              <div class="info">
+                <i class="fa fa-file-code-o fa-5x"></i>
+                <h2>Projects</h2>
+                <p>See some of the things I've done.</p>
+                <p>
+                  <a id="b-projects" href="#section-projects" role="button">
+                    <i class="fa fa-chevron-down fa-3x chevron"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="icon-bg" id="icon-fun">
+              <div class="info">
+                <i class="fa fa-camera-retro fa-5x"></i>
+                <h2>Fun Stuff</h2>
+                <p>Photography and whatnot</p>
+                <p>
+                  <a id="b-fun-stuff" href="#section-fun-stuff" role="button">
+                    <i class="fa fa-chevron-down fa-3x chevron"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <section id="section-fun-stuff">
+      <section id="section-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h2>Ronnie McGregor. <small>24 year old guy from Calgary</small></h2>
+              <p class="lead">
+                In 2015 I will graduate from Mount Royal University in Calgary with a degree in <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/index.htm" target="_blank">Computer Information Systems</a>. I love to write code and make things. 
+              </p>
+              <h3>Interests</h3>
+              <p class="lead">
+                In my free time I like to take photos, read science fiction, go for a bike ride or a hike. That and a ton of Netflix.
+              </p>
+              <h3>Résumé</h3>
+              <a href="http://ronmadethis.com/dl/Ronnie.McGregor.Resume.pdf" target="_blank" title="View my resume">
+                <i class="fa fa-file-pdf-o fa-2x i-black"></i>
+              </a>
+            </div>
+            <div class="col-md-5">
+              <img class="img-responsive img-circle" src="img/me.jpg" alt="Me!">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h2>
+                <a class="link" href="http://im.ronmadethis.com/" target="_blank">Inspection Mapper.</a> 
+                <small>PHP, MySQL, JavaScript.</small>
+              </h2>
+              <p class="lead">
+                This project crawls the <a class="link" href="http://www12.albertahealthservices.ca/health-inspections/SearchServlet?direct=alphaSearch&letter=R&name=&address=&municipality=&community=" target="_blank">Alberta Health site</a>,
+                then scrapes and parses the health violations of Calgary businesses.
+                The data is displayed on a map which users can interact with or search.
+                The <a class="link" href="https://developers.google.com/maps/documentation/geocoding/" target="_blank">Google Geocoding API</a> is used to turn addresses into latitude and longitude coordinates. This project was created
+                by a classmate and myself for the <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">Advanced Web Development</a>
+                course at Mount Royal University taught by <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/ComputerScienceInformationSystems/Faculty/rhoar.htm" target="_blank">Ricardo Hoar</a>.
+              </p>
+              <a href="https://github.com/ronmcg/Inspection-Mapper" target="_blank" title="View the source">
+                <i class="fa fa-github fa-3x project-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-5">
+             <img class="img-responsive img-rounded" src="img/im3.png" alt="Overview of Inspection Mapper">
+           </div>
+         </div>
+         <hr/>
+         <div class="row">
+          <div class="col-md-7">
+            <h2>
+              <a class="link" href="http://mru.ronmadethis.com/" target="_blank">MRU Changes. </a>
+              <small>PHP, MySQL, JavaScript.</small>
+            </h2>
+            <p class="lead">
+              This project is also from <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp4513.htm" target="_blank">Advanced Web Development</a>.
+              We were each given some documents outlining the university's workflow for implementing changes and two weeks. The goal of this assignment was to move quickly to make a working prototype, the idea was
+              to show the university that this project could be done by students. Feel free to log in with user name rmcgr467@mtroyal.ca and password ronnie.
+            </p>
+            <a href="https://github.com/ronmcg/MRU-Changes" target="_blank" title="View the source">
+              <i class="fa fa-github fa-3x project-icon"></i>
+            </a>
+          </div>
+          <div class="col-md-5">
+            <img class="img-responsive img-rounded" src="img/mru.png" alt="Overview of MRU Changes">
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>
+              <a class="link" href="http://ronmadethis.azurewebsites.net" target="_blank">Art Store. </a><small>ASP.NET, C#, MSACCESS.</small></h2>
+              <p class="lead">
+                This project is from the <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Programs/BachelorofComputerInformationSystems/CurriculumCourses/comp3512.htm" target="_blank">Web Application Development</a> course taught by <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Departments/ComputerScienceInformationSystems/Faculty/rconnolly.htm" target="_blank">Randy Connolly</a> at Mount Royal University completed by two other
+                classmates and myself. This project utilizes a three tier design (presentation, business, and data layers). Our project was used as the example for future classes.
+              </p>
+              <a href="https://github.com/ronmcg/Art-Store" target="_blank" title="View the source">
+                <i class="fa fa-github fa-3x project-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-5">
+              <img class="img-responsive img-rounded" src="img/art-store.png" alt="Overview of Art Store">
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-7">
+              <h2>
+                <a class="link" href="https://play.google.com/store/apps/details?id=com.ronnie.community" target="_blank">Community Soundboard.</a> <small>Java, Android</small></h2>
+                <p class="lead">
+                  This is a personal project that is just for fun. Users can play clips from the TV show or set them as their ringtone. Over 30,000 installs and a rating of 4.57/5.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img class="img-responsive img-rounded" src="img/community.png" alt="Overview of Community Soundboard">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-fun-stuff">
           <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <h2>Photography.</h2>
+            <div class="row">
+              <div class="col-md-7">
+                <h2>
+                  <a class="link" href="https://www.flickr.com/photos/ronnie-mcg/" target="_blank">Photography.</a></h2>
                   <p class="lead">
                     I like to take photos when I can and the few that turn out decent I post to my <a class="link" href="https://www.flickr.com/photos/ronnie-mcg/" target="_blank">flickr</a> account.
                   </p>
                 </div>
                 <div class="col-md-5">
-                  <img class="img-responsive img-rounded" src="img/orchid.jpg" alt="Overview of Art Store">
+                  <img class="img-responsive img-rounded" src="img/orchid.jpg" alt="One of my photos">
                 </div>
               </div>
               <hr/>
@@ -201,11 +207,11 @@
                 <div class="col-md-7">
                   <h2>FacePong. <small>Unreal Engine, Oculus Rift.</small></h2>
                   <p class="lead">
-                    3D pong and you're face is the paddle!
+                    For the <a class="link" href="http://www.mtroyal.ca/ProgramsCourses/CourseListings/comp4555.htm" target="_blank"> Games Development</a> course at MRU my group made 3D pong and you're face is the paddle!
                   </p>
                 </div>
                 <div class="col-md-5">
-                  <img class="img-responsive img-rounded" src="img/oculus.jpg" alt="Overview of Art Store">
+                  <img class="img-responsive img-rounded" src="img/oculus.jpg" alt="I forgot to take a screenshot of the game when I had the oculus :(">
                 </div>
               </div>
             </div>
@@ -214,23 +220,23 @@
           <section id="section-contact">
             <div class="row icon-contact">
               <div class="col-sm-3 col-md-3 col-lg-3">
-                <a href="https://github.com/ronmcg">
-                  <i class="fa fa-github fa-5x social-icon" id="facebook"></i>
+                <a href="https://github.com/ronmcg" target="_blank">
+                  <i class="fa fa-github fa-5x social-icon" id="github"></i>
                 </a>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3">
-                <a href="https://ca.linkedin.com/in/ronniemcgregor">
+                <a href="https://ca.linkedin.com/in/ronniemcgregor" target="_blank">
                   <i class="fa fa-linkedin-square fa-5x social-icon" id="linkedin"></i>
                 </a>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3">
-                <a href="https://twitter.com/ronmadethis">
+                <a href="https://twitter.com/ronmadethis" target="_blank">
                   <i class="fa fa-twitter fa-5x social-icon" id="twitter"></i>
                 </a>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3">
-                <a href="mailto:rmcgr467@mtroyal.ca">
-                  <i class="fa fa-envelope-o fa-5x social-icon" id="linkedin"></i>
+                <a href="mailto:rmcgr467@mtroyal.ca" target="_blank">
+                  <i class="fa fa-envelope-o fa-5x social-icon" id="email"></i>
                 </a>
               </div>
             </div>
@@ -238,5 +244,14 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
           <script src="js/main.js"></script>
+          <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-60395807-1', 'auto');
+            ga('send', 'pageview');
+          </script>
         </body>
         </html>
