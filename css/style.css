@@ -18,12 +18,12 @@ p {
 
 .lead {
   line-height: 175%;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /**Make the links pretty*/
 a, .link {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
   font-weight: 400;
   position: relative;
@@ -93,6 +93,11 @@ img {
 
 .title {
   color: white;
+  font-size: 600%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section-title {
   font-size: 600%;
   font-family: 'Raleway', sans-serif;
 }
